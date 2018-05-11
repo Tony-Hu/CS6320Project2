@@ -69,9 +69,11 @@
           <div class="row">
             <div class="col-12">
               <h1 class="text-center">What is Eclipse Smarthome?</h1>
-              <p>The Eclipse SmartHome project is a framework that allows building smart home solutions that have a strong focus on heterogeneous environments, i.e. solutions that deal with the integration of different protocols or standards. Its purpose is to provide a uniform access to devices and information and to facilitate different kinds of interactions with them. This framework consists out of a set of OSGi bundles that can be deployed on an OSGi runtime and which defines OSGi services as extension points.</p>
+              <p>The Eclipse Smart Home project is a flexible framework for smart home and ambient assisted living (AAL) solutions. It has a strong focus on heterogeneous environments, such as solutions that deal with the integration of different protocols or standards.</p>
+              <p>Its purpose is to provide a uniform access to devices and information and to facilitate different kinds of interactions with them. This framework consists out of a set of OSGi bundles that can be deployed on an OSGi runtime and which defines OSGi services as extension points.</p>
               <p>The stack is meant to be usable on any kind of system that can run an OSGi stack - be it a multi-core server, a residential gateway or a Raspberry Pi.</p>
               <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p> -->
+              <iframe style="margin:auto;"width="500" height="400" src="https://www.youtube.com/embed/0rbv51feAII"></iframe>
             </div>
           </div>
         </div>
@@ -210,7 +212,7 @@
         <div class="row">
           <div class="col-12">
             <h1 class="text-center">Smarthome PaperUI</h1>
-            <p>The Paper UI is an HTML5 application for the Eclipse SmartHome framework. The primary focus of the Paper UI is to provide a testing tool for binding developers. For example with the help of the UI developers can test the discovery functionality of a binding. Moreover the Paper UI can be seen as an example of how applications can use the new APIs and how items can be rendered. The Paper UI implements Googles Material Design and is responsive, so that it smoothly renders on different screen sizes. All modern browsers (Safari, Chrome, Firefox) besides the Internet Explorer are supported in their newest version. The Internet explorer is mainly lacking support for SSE.</p>
+            <p>The Paper UI is an HTML5 application for the Eclipse SmartHome framework. It primary focus on providing a testing tool for binding developers. For example with the help of the UI, developers can test the discovery functionality of a binding. Moreover the Paper UI can be seen as an example of how applications can use the new APIs and how items can be rendered. The Paper UI implements Googles Material Design and is responsive, so that it smoothly renders on different screen sizes. All modern browsers (Safari, Chrome, Firefox) besides the Internet Explorer are supported in their newest version. The Internet explorer is mainly lacking support for SSE.</p>
             <p>Even if the Eclipse SmartHome framework is very flexible, the Paper UI is quite simple and only supports limited use cases. In contrast to the configuration files it is not possible to manage items and links individually. The user only sees things and the corresponding control interface.</p>
             <!-- <button type="button" class="btn btn-success">Get in touch</button> -->
             <h2>Features</h2>
@@ -222,7 +224,14 @@
                 <li>Configuration of Things</li>
                 <li>Configuration of services</li>
                 <li>Event support for item state updates, Thing status updates and new inbox entries</li>
+            </ul>
+            <p>
+              <h2>How it Looks Like</h2> 
+              <ul>
+                  <li><h5>Main View</h5><img src="images/paperui1.png"></li><br>
+                  <li><h5>Widget Overview</h5><img src="images/paperui2.png"></li>
               </ul>
+            </p>
           </div>
         </div>
       </div>
@@ -231,7 +240,6 @@
     <section id="conclusions">
         <h1 class="text-center">Conclusions</h1>
     </section>
-    <hr>
     <!-- <hr>
     <div class="section">
       <div class="container">
@@ -262,15 +270,6 @@
       </div>
     </div>
     <hr> -->
-    <footer class="text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <p>Copyright © MyCompany. All rights reserved.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
