@@ -9,7 +9,7 @@
     <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -21,7 +21,7 @@
                     Intro
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="index.html#what-is">What is Eclipse Smarthome?</a>
+                    <a class="dropdown-item" href="index.html">What is Eclipse Smarthome?</a>
                     <a class="dropdown-item" href="index.html#install">Install and deploy</a>
                     <a class="dropdown-item" href="index.html#paper-ui">Smarthome PaperUI</a>
                     <a class="dropdown-item" href="index.html#conclusions">Conclusions</a>
@@ -32,7 +32,7 @@
                     Concept
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="concept.html#things">Things</a>
+                    <a class="dropdown-item" href="concept.html">Things</a>
                     <a class="dropdown-item" href="concept.html#channels">Channels</a>
                     <a class="dropdown-item" href="concept.html#bindings">Bindings</a>
                     <a class="dropdown-item" href="concept.html#items">Items</a>
@@ -44,8 +44,8 @@
                     Communications
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="communications.html#rest">What is REST?</a>
-                    <a class="dropdown-item" href="communications.html#api">REST API</a>
+                    <a class="dropdown-item" href="communications.html">What is REST?</a>
+                    <a class="dropdown-item" href="communications.html#restapi">REST API</a>
                     <a class="dropdown-item" href="communications.html#endpoints">REST Endpoints</a>
                 </div>
             </li>
@@ -54,7 +54,7 @@
                     Demo
                 </a>
                 <div class="dropdown-menu" aria-labelledby="DemoNavbarDropdown">
-                    <a class="dropdown-item" href="demo.html#instance">An instance - openHAB2</a>
+                    <a class="dropdown-item" href="demo.html">An instance - openHAB2</a>
                     <a class="dropdown-item" href="demo.html#live">live demo</a>
                 </div>
             </li>
@@ -86,7 +86,9 @@
         <div class="row">
             <div class="col-12 text-left">
                 <h1 class="text-center">An instance - openHAB2</h1>
-              <p><strong><a href="https://www.openhab.org/">openHAB 2</a></strong> is an instance of <strong>Eclipse Smarthome</strong>. It's trying to integrate different home automation systems and technologies into one single solution that allows over-arching automation rules and that offers uniform user interfaces.</p>
+
+              <p><strong><a href="https://www.openhab.org/">openHAB 2<img src="images/openhab-logo-square.png" class="img-thumbnail" height="34" width="34"></a></strong>
+                 is an instance of <strong>Eclipse Smarthome</strong>. It's trying to integrate different home automation systems and technologies into one single solution that allows over-arching automation rules and that offers uniform user interfaces.</p>
               <p>The architecture, and the relationship between <strong>Eclipse Smarthome</strong> and <strong>openHAB2</strong> are shown as below:</p>
             </div>
         </div>
@@ -107,7 +109,12 @@
         <div class="row">
             <div class="col-12 text-left">
                 <h1 class="text-center">Live Demo on Youtube</h1>
-                <p>Things expose their functionality through <strong>channels</strong>.  Physical things will might have informational channels.  For example a light bulb will have a &quot;Color temperature, a sensor might have a channel for temperature, humidity or motion, and a web service might have channels such as stock prices for a particular company.</p>
+                <h3 class="text-left">1. Using Eclipse Smarthome with REST Endpoints</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fC8VS3MggPY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3 class="text-left">2. Things, Items and Sitemaps in openHAB2</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-5HLOWeI3IQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <h3 class="text-left">3. How openHAB2 manipulate with my light</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wgt2st0-w8I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
     </div>
