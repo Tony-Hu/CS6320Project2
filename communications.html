@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Concepts</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Intro
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">What is Eclipse Smarthome?</a>
+                        <a class="dropdown-item" href="#">Install and deploy</a>
+                        <a class="dropdown-item" href="#">Smarthome PaperUI</a>
+                        <a class="dropdown-item" href="#">Conclustions</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="conceptNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Concept
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="concept.html#things">Things</a>
+                        <a class="dropdown-item" href="concept.html#channels">Channels</a>
+                        <a class="dropdown-item" href="concept.html#bindings">Bindings</a>
+                        <a class="dropdown-item" href="concept.html#items">Items</a>
+                        <a class="dropdown-item" href="concept.html#links">Links</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="communicationsNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Communications
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="communications.html#rest">What is REST?</a>
+                        <a class="dropdown-item" href="communications.html#api">REST API</a>
+                        <a class="dropdown-item" href="communications.html#endpoints">REST Endpoints</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="demoNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Demo
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="DemoNavbarDropdown">
+                        <a class="dropdown-item" href="#">An instance - openHAB2</a>
+                        <a class="dropdown-item" href="#">live demo</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">IoT cloud</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reference</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="jumbotron text-center mt-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Communications</h1>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rest">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-left">
+                    <h1 class="text-center">What is REST?</h1>
+                    <p><strong>REST</strong> stands for for REpresentational State Transfer. It is an architectural style for web software architectures. REST is the way to make two applications communicate with each other over the Internet. The main concept in REST contains <strong>Resource</strong>, <strong>Verbs</strong>, and <strong>Representations</strong>. REST pattern is used to name any information as a resource, and HTTP verbs on URLs to represent create/update/read/delete.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="restapi">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-left">
+                    <h1 class="text-center">REST API</h1>
+                    <p>A <strong>REST API</strong> is an API that uses HTTP requests to <strong>GET</strong>, <strong>PUT</strong>, <strong>POST</strong> and <strong>DELETE</strong> data. Therefore it provides the communication between two software programs. That is, if server side has REST API, then client side can send requests(GET, POST, etc.) to this API.
+                    </p>
+                    <p>The REST API of Eclipse SmartHome offers different purposes.</p>
+                        <ol>
+                            <li>Integrates with other system.</li>
+                            <li>Gives access to things, links, sitemaps, etc.</li>
+                        </ol>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="verbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-left">
+                    <h1 class="text-center">Verbs</h1>
+                    <p>
+                        <ul>
+                            <li>GET - Retrieve a resource from the Server</li>
+                            <li>POST - Create a new Resource on the Server.</li>
+                            <li>PUT - Update a Resource on the Server</li>
+                            <li>DELETE - Remove a Resource from the Server.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="endpoints">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-left">
+                    <h1 class="text-center">REST Endpoints</h1>
+                    <p>
+                        An
+                        <Strong>Endpoint</Strong> is a URL within your API that represents a Resource or a Collection of Resources. For example, let’s build an API to represent several <Strong>companies</Strong>, each company contains some <Strong>employees</Strong>. 
+                    </p>
+                    <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Method</th>
+                                    <th>Path</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>/companies</td>
+                                    <td>Get the list of all companies</td>
+                                </tr>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>/companies/google</td>
+                                    <td>Get the detail of company Google</td>
+                                </tr>
+                                <tr>
+                                    <td>DELETE</td>
+                                    <td>/companies/facebook</td>
+                                    <td>Delete company Facebook</td>
+                                </tr>
+                                <tr>
+                                    <td>GET</td>
+                                    <td>/companies/google/employees</td>
+                                    <td>Get the list of all employees who works at Google</td>
+                                </tr>
+                                <tr>
+                                    <td>DELETE</td>
+                                    <td>/companies/google/employees/sundar_pichai</td>
+                                    <td>Fire Sundar Pichai who works as CEO at Google.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                        <h4>
+                            Eclipse Smarthome REST Endpoints
+                        </h4>
+                        <p>Here are two example from Smarthome REST Endpoints to see how they designed REST API.</p>
+
+                        <img class="mr-3 img-fluid" src="images/things_api.png">
+                        <img class="mr-3 img-fluid" src="images/sitemaps_api.png">
+                </div>
+            </div>
+        </div>
+    </section>
+     
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright © MyCompany. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+</body>
+
+</html>

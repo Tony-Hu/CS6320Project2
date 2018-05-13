@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Concepts</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Intro
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">What is Eclipse Smarthome?</a>
+                        <a class="dropdown-item" href="#">Install and deploy</a>
+                        <a class="dropdown-item" href="#">Smarthome PaperUI</a>
+                        <a class="dropdown-item" href="#">Conclustions</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="conceptNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Concept
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="concept.html#things">Things</a>
+                        <a class="dropdown-item" href="concept.html#channels">Channels</a>
+                        <a class="dropdown-item" href="concept.html#bindings">Bindings</a>
+                        <a class="dropdown-item" href="concept.html#items">Items</a>
+                        <a class="dropdown-item" href="concept.html#links">Links</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="communicationsNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Communications
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="communications.html#rest">What is REST?</a>
+                        <a class="dropdown-item" href="communications.html#api">REST API</a>
+                        <a class="dropdown-item" href="communications.html#endpoints">REST Endpoints</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="demoNavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Demo
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="DemoNavbarDropdown">
+                        <a class="dropdown-item" href="#">An instance - openHAB2</a>
+                        <a class="dropdown-item" href="#">live demo</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cloud.html">IoT cloud</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reference</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="jumbotron text-center mt-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>IoT Cloud</h1>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rest">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-left">
+                    <h1 class="text-center">Overview</h1>
+                    <p>Garner, a research and advisory company, said that the Internet of Things will reach 26 billion installed units by 2020. One main challenge is how do we deal with the large amount of data produced by these devices. These data need to be stored, accessed, and processes and this is where cloud comes into picture. And we can say that cloud computing will be the backbone for IoT and Big Data development.
+                    </p>
+                    <p class="text-center"><img src="images/cloud1.png"><br><a href="https://www.devteam.space/blog/10-best-internet-of-things-iot-cloud-platforms/"><em>Image Source</em></a></p> 
+ 
+
+                    <p>Although there are many could services launched by companies such as Apple’s iCloud, Google Cloud, Microsoft OneDrive, these cloud computing systems are used for personal computers. We need something can provide intensive support for IoT devices. Below, I point out some challenges that the Internet of Things face and how the cloud solve these issue.</p>
+                    <p class="text-center"><img src="images/cloud2.png"><br><a href="https://atmelcorporation.wordpress.com/2015/04/07/it-cloud-vs-iot-cloud/"><em>Image Source</em></a></p> 
+
+
+
+                    <br>
+                    <br>
+                    <h1 class="text-center">How will the cloud be able to handle challenges of IoT</h1>
+                    <br>
+                    <h4>Cloud can solve many technical obstacles to IoT deployment.</h4>
+                    <p>First, we have to figure out how our machinery will work in the hardware aspects, such as making devices embedded with sensors, connecting devices to the internet or other devices. Then we have to develop the software to handle data collection. Finally, these IoT devices will be integrated with our backend server. <br><br>However, when we are developing IoT, we want to focus on hardware and software itself, and don’t want worry about server setup, network configuration, and database connection. Cloud can provide the solution to these difficulties. <br><br>What we have to do on cloud? Just apply a virtual server, and launch a database instance to run out IoT solution.
+                    </p>
+                    <br>
+                    <h4>With the increasing number of devices connected, data security will become increasingly important. Cloud can help us deal with security issues.</h4>
+                    <p>It is not hard to picture how difficult it can be to secure tens of thousands of devices in the hands of users. If one of these devices was exploited by hacker, and many devices are interconnected. It may lead to the sensitive information being compromised and irremediable loss. <br><br>Cloud can help secure the device itself and the backend side. Cloud provider has an identity management solution that can be integrated with our IoT, so users can sign in their devices safely. Also, cloud providers have tools for setup of Firmware-Over-The-Air (FOTA) and software updates to prevent the hacker from exploiting the vulnerability by outdated firmware.
+                    </p>
+                    <br>
+                    <br>
+                    <h1 class="text-center">Conclusion</h1>
+                    <p>The purpose of IoT is to connect all things. But it cannot be fully realized without the cloud. IoT cloud help us speed up the IoT development, store and process the large amount of data, provide infrastructure resources we can use, secure our IoT solution, and even integrate our devices with system and other devices. Therefore, It is not too much to say that <strong>cloud services are the Backbone of IoT</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright © MyCompany. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+</body>
+
+</html>
