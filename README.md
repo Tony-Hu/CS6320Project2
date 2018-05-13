@@ -14,17 +14,17 @@ openhub.org<br>
 ## openHAB installation
 https://docs.openhab.org/installation/index.html<br>
 ## Rest
-https://restfulapi.net/
-https://codeplanet.io/principles-good-restful-api-design/
+https://restfulapi.net/<br>
+https://codeplanet.io/principles-good-restful-api-design/<br>
 https://www.eclipse.org/smarthome/documentation/features/rest.html<br>
 
 ## Binding
-https://www.eclipse.org/smarthome/documentation/development/bindings/how-to.html#structure-of-a-binding
+https://www.eclipse.org/smarthome/documentation/development/bindings/how-to.html#structure-of-a-binding<br>
 
 
 
 ## Cloud
-http://www.cxotoday.com/story/iot-and-cloud-computing-and-how-they-are-interdependent
-https://www.thorntech.com/2017/02/cloud-computing-foundation-internet-things
-https://www.devteam.space/blog/10-best-internet-of-things-iot-cloud-platforms
-https://atmelcorporation.wordpress.com/2015/04/07/it-cloud-vs-iot-cloud
+http://www.cxotoday.com/story/iot-and-cloud-computing-and-how-they-are-interdependent<br>
+https://www.thorntech.com/2017/02/cloud-computing-foundation-internet-things<br>
+https://www.devteam.space/blog/10-best-internet-of-things-iot-cloud-platforms<br>
+https://atmelcorporation.wordpress.com/2015/04/07/it-cloud-vs-iot-cloud<br>
