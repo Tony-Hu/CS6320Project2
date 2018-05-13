@@ -54,8 +54,8 @@
                     Demo
                 </a>
                 <div class="dropdown-menu" aria-labelledby="DemoNavbarDropdown">
-                    <a class="dropdown-item" href="#">An instance - openHAB2</a>
-                    <a class="dropdown-item" href="#">live demo</a>
+                    <a class="dropdown-item" href="demo.html#instance">An instance - openHAB2</a>
+                    <a class="dropdown-item" href="demo.html#live">live demo</a>
                 </div>
             </li>
             <li class="nav-item">
@@ -72,9 +72,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1>Eclipse Smarthome Concepts</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, deleniti, ea nisi suscipit atque tempore aspernatur harum unde veritatis neque rem dolores assumenda. Recusandae facilis dolores cum iste assumenda accusamus.</p>
-
+                    <h1>Demo</h1>
+                    <p>How does Eclipse Smarthome actually used in real world?</p>
                 </div>
             </div>
         </div>
@@ -82,37 +81,20 @@
 </section>
 
 
-<section id="things">
+<section id="instance">
     <div class="container">
         <div class="row">
             <div class="col-12 text-left">
-                <h1 class="text-center">Things</h1>
-                <p><strong>Things</strong> are entities that can be added the the system.  It maybe easiest to first think of the physical <i>things</i> that can be added to a home system such as light bults, switches, sensors and thermostats.</p>
+                <h1 class="text-center">An instance - openHAB2</h1>
+              <p><strong><a href="https://www.openhab.org/">openHAB 2</a></strong> is an instance of <strong>Eclipse Smarthome</strong>. It's trying to integrate different home automation systems and technologies into one single solution that allows over-arching automation rules and that offers uniform user interfaces.</p>
+              <p>The architecture, and the relationship between <strong>Eclipse Smarthome</strong> and <strong>openHAB2</strong> are shown as below:</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4 col-12">
-                <img class="img-fluid" src="images/concept/bulb.jpg" alt="Bulb">
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Dimmable Light blub </h5>
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <img class="mr-3 img-fluid" src="images/concept/sensor.jpg" alt="Sensor">
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Sensor</h5>
-                </div>
-            </div>
-            <div class="col-md-4 col-12">
-                <img class="mr-3 img-fluid" src="images/concept/smartswitch.jpg" alt="Switch">
-                <div class="media-body">
-                    <h5 class="mt-0 mb-1">Swich</h5>
-                </div>
-            </div>
-        </div>
+        <img class="figure-img" src="images/architecture.png" alt="Archi">
         <div class="row">
             <div class="col-12 text-left">
-                <p>Things however are not limited to physical devises, they could also be web services or other sources of information.  Things can has properties such as IP addresses, access tokens or devise specific configurations. A <i>thing</i> will expose its capabilities through <i>channels</i>. </p>
+              <p><strong>openHAB2</strong> is developed in Java and mainly based on the <strong>Eclipse SmartHome</strong> framework. It uses <strong>Apache Karaf</strong> together with <strong>Eclipse Equinox</strong> to create an <strong>Open Services Gateway initiative (OSGi)</strong> runtime environment. <strong>Jetty</strong> is used as an HTTP server.</p>
+              <p>openHAB is highly modular software that can be extended through <strong>“Add-ons”</strong>. Add-ons give openHAB a wide array of capabilities, from User Interfaces, to the ability to interact with a large and growing number of physical Things. Add-ons may come from the openHAB 2 distribution, the Eclipse SmartHome project Extensions, or from the openHAB 1 distribution.</p>
             </div>
         </div>
     </div>
@@ -120,134 +102,17 @@
 
 
 
-<section id="channels">
+<section id="live">
     <div class="container">
         <div class="row">
             <div class="col-12 text-left">
-                <h1 class="text-center">Channels</h1>
+                <h1 class="text-center">Live Demo on Youtube</h1>
                 <p>Things expose their functionality through <strong>channels</strong>.  Physical things will might have informational channels.  For example a light bulb will have a &quot;Color temperature, a sensor might have a channel for temperature, humidity or motion, and a web service might have channels such as stock prices for a particular company.</p>
             </div>
         </div>
     </div>
 </section>
 
-
-<section id="bindings">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-left">
-                <h1 class="text-center">Bindings</h1>
-                <p><Strong>Bindings</Strong> are software adapters that make things avaible to your system.  Bindings are add-ons that abstract away the specifics of the thing or physical devise so that it can be treated generally.  Binding are what allow the system to work with multiple brands of smart plugs in one system.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="items">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-left">
-                <h1 class="text-center">Items</h1>
-                <p>Items represent functionality used by the application. This allows for the strict separation of the physical world (Things) and the application.  Items can be grouped which become very important when creating interfaces.
-                </p>
-                <p>
-                    The following item types are currently available (alphabetical order):
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>Item Name</th>
-                        <th>Description</th>
-                        <th>Command Types</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Color</td>
-                        <td>Color information (RGB)</td>
-                        <td>OnOff, IncreaseDecrease, Percent, HSB</td>
-                    </tr>
-                    <tr>
-                        <td>Contact</td>
-                        <td>Item storing status of e.g. door/window contacts</td>
-                        <td>OpenClose</td>
-                    </tr>
-                    <tr>
-                        <td>DateTime</td>
-                        <td>Stores date and time</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>Dimmer</td>
-                        <td>Item carrying a percentage value for dimmers</td>
-                        <td>OnOff, IncreaseDecrease, Percent</td>
-                    </tr>
-                    <tr>
-                        <td>Group</td>
-                        <td>Item to nest other items / collect them in groups</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>Image</td>
-                        <td>Holds the binary data of an image</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>Location</td>
-                        <td>Stores GPS coordinates</td>
-                        <td>Point</td>
-                    </tr>
-                    <tr>
-                        <td>Number</td>
-                        <td>Stores values in number format, takes an optional dimension suffix</td>
-                        <td>Decimal</td>
-                    </tr>
-                    <tr>
-                        <td>Number:<dimension></dimension></td>
-                        <td>like Number, additional dimension information for unit support</td>
-                        <td>Quantity</td>
-                    </tr>
-                    <tr>
-                        <td>Player</td>
-                        <td>Allows to control players (e.g. audio players)</td>
-                        <td>PlayPause, NextPrevious, RewindFastforward</td>
-                    </tr>
-                    <tr>
-                        <td>Rollershutter</td>
-                        <td>Typically used for blinds</td>
-                        <td>UpDown, StopMove, Percent</td>
-                    </tr>
-                    <tr>
-                        <td>String</td>
-                        <td>Stores texts</td>
-                        <td>String</td>
-                    </tr>
-                    <tr>
-                        <td>Switch</td>
-                        <td>Typically used for lights (on/off)</td>
-                        <td>OnOff</td>
-                    </tr>
-                    </tbody>
-                </table>
-                (<a href="https://www.eclipse.org/smarthome/documentation/concepts/items.html">https://www.eclipse.org/smarthome/documentation/concepts/items.html</a>)
-
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="links">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="text-center">Links</h1>
-                <p>A <strong>Link</strong> is the connection between a <i>thing</i> and a <i>item</i>.  A link associates exactly one channel and one item.  A channel is enabled when it is linked to an item and that item can be accessed via the channel.</p>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery-3.2.1.min.js"></script>
